@@ -17,7 +17,7 @@ const server = http.createServer(app);
 
 export const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://surveyformsapp.netlify.app/",
     methods: ["GET", "POST"]
   }
 });
@@ -50,6 +50,7 @@ app.listen(PORT1, ()=>{
     console.log("Server is Running from ", PORT1);
     
 })
+
 
 
 
